@@ -14,5 +14,7 @@ from whitenoise import WhiteNoise
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'practica_1.settings')
 
+
+application = get_wsgi_application()
+
 application = WhiteNoise(application)
-#application = get_wsgi_application()
