@@ -97,6 +97,7 @@ DATABASES = {
     'PASSWORD': 'LfZLmf2axeVqj8uTxYHD7dMuIQS3piFg',
    'HOST': 'dpg-cumkmmq3esus738soga0-a.oregon-postgres.render.com',
     'PORT': '5432',
+    'sslmode': 'require',
    }
 }
 # Replace the SQLite DATABASES configuration with PostgreSQL:
