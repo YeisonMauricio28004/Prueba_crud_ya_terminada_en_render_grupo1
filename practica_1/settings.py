@@ -89,19 +89,19 @@ WSGI_APPLICATION = 'practica_1.wsgi.application'
 #    }
 #}
 #postgres con render.com
-DATABASES = {
- 'default': {
-     'ENGINE': 'django.db.backends.postgresql',
-     'NAME': 'yeisont_db',
-     'USER': 'yeisont_db_user',
-    'PASSWORD': 'LfZLmf2axeVqj8uTxYHD7dMuIQS3piFg',
-   'HOST': 'dpg-cumkmmq3esus738soga0-a',
-    'PORT': '5432',
-    'OPTIONS': {
-     'sslmode': 'require', 
-   },
-}
-}
+#DATABASES = {
+ #'default': {
+  #   'ENGINE': 'django.db.backends.postgresql',
+   #  'NAME': 'yeisont_db',
+    # 'USER': 'yeisont_db_user',
+    #'PASSWORD': 'LfZLmf2axeVqj8uTxYHD7dMuIQS3piFg',
+   #'HOST': 'dpg-cumkmmq3esus738soga0-a',
+    #'PORT': '5432',
+    #'OPTIONS': {
+     #'sslmode': 'require', 
+   #},
+#}
+#}
 # Replace the SQLite DATABASES configuration with PostgreSQL:
 DATABASES = {
     'default': dj_database_url.config(
