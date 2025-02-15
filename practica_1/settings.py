@@ -95,7 +95,7 @@ DATABASES = {
      'NAME': 'yeisont_db',
      'USER': 'yeisont_db_user',
     'PASSWORD': 'LfZLmf2axeVqj8uTxYHD7dMuIQS3piFg',
-   'HOST': 'dpg-cumkmmq3esus738soga0-a.oregon-postgres.render.com',
+   'HOST': 'PGPASSWORD=LfZLmf2axeVqj8uTxYHD7dMuIQS3piFg psql -h dpg-cumkmmq3esus738soga0-a.oregon-postgres.render.com -U yeisont_db_user yeisont_db',
     'PORT': '5432',
     
    }
