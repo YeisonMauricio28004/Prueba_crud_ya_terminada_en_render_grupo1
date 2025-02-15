@@ -104,7 +104,7 @@ DATABASES = {
     'default': dj_database_url.config(
         default='postgresql://yeisont_db_user:LfZLmf2axeVqj8uTxYHD7dMuIQS3piFg@dpg-cumkmmq3esus738soga0-a.oregon-postgres.render.com/yeisont_db',
         conn_max_age=600,
-        options={'sslmode': 'require'}  
+         
     )
 }
 
