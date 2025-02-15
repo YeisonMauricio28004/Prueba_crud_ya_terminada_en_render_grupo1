@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-d-+k99^*=#xzlfu8b022lse&+3exk*67+0ehdijw^qrug6g$-p
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True  # Temporalmente para ver errores
-ALLOWED_HOSTS = ["*"]  # Para descartar problemas de dominio
+ALLOWED_HOSTS = ['.onrender.com', 'localhost', '127.0.0.1']  # Para descartar problemas de dominio
 RENDER_EXTERNAL_HOSTNAME =os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
@@ -89,27 +89,27 @@ WSGI_APPLICATION = 'practica_1.wsgi.application'
 #    }
 #}
 #postgres con render.com
-#DATABASES = {
- #'default': {
-  #   'ENGINE': 'django.db.backends.postgresql',
-   #  'NAME': 'yeisont_db',
-    # 'USER': 'yeisont_db_user',
-    #'PASSWORD': 'LfZLmf2axeVqj8uTxYHD7dMuIQS3piFg',
-   #'HOST': 'dpg-cumkmmq3esus738soga0-a',
-    #'PORT': '5432',
-    #'OPTIONS': {
-     #'sslmode': 'require', 
-   #},
-#}
-#}
-# Replace the SQLite DATABASES configuration with PostgreSQL:
 DATABASES = {
-    'default': dj_database_url.config(
-        default='postgresql://yeisont_db_user:LfZLmf2axeVqj8uTxYHD7dMuIQS3piFg@dpg-cumkmmq3esus738soga0-a.oregon-postgres.render.com/yeisont_db',
-        conn_max_age=600,
-         
-    )
+ 'default': {
+   'ENGINE': 'django.db.backends.postgresql',
+    'NAME': 'yeisont_db',
+    'USER': 'yeisont_db_user',
+    'PASSWORD': 'LfZLmf2axeVqj8uTxYHD7dMuIQS3piFg',
+   'HOST': 'dpg-cumkmmq3esus738soga0-a',
+    'PORT': '5432',
+    'OPTIONS': {
+     'sslmode': 'require', 
+   },
 }
+}
+# Replace the SQLite DATABASES configuration with PostgreSQL:
+#DATABASES = {
+ #   'default': dj_database_url.config(
+  #      default='postgresql://yeisont_db_user:LfZLmf2axeVqj8uTxYHD7dMuIQS3piFg@dpg-cumkmmq3esus738soga0-a.oregon-postgres.render.com/yeisont_db',
+   #     conn_max_age=600,
+         
+    #)
+#}
 
 
 
