@@ -92,10 +92,10 @@ WSGI_APPLICATION = 'practica_1.wsgi.application'
 #DATABASES = {
 #    'default': {
 #        'ENGINE': 'django.db.backends.postgresql',
-#        'NAME': 'prueba_host',
-#        'USER': 'restaurant_d6yj_user',
-#        'PASSWORD': 'K72blurtTW5Xf68vRLoW8qnWYIbxRf4r',
-#        'HOST': 'dpg-culmvrqn91rc73efdqt0-a.oregon-postgres.render.com',
+#        'NAME': 'yeisont_db',
+#        'USER': 'yeisont_db_user',
+#        'PASSWORD': 'LfZLmf2axeVqj8uTxYHD7dMuIQS3piFg',
+#        'HOST': 'dpg-cumkmmq3esus738soga0-a.oregon-postgres.render.com',
 #       'PORT': '5432',
 #    }
 #}
@@ -103,7 +103,7 @@ WSGI_APPLICATION = 'practica_1.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default='postgresql://postgres:postgres@localhost:5432/postgres',
+        default='postgresql://yeisont_db_user:LfZLmf2axeVqj8uTxYHD7dMuIQS3piFg@dpg-cumkmmq3esus738soga0-a.oregon-postgres.render.com/yeisont_db',
         conn_max_age=600
     )
 }
